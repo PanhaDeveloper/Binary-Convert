@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(54, 164, 164);
+}
+.slide-container{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0rem;
+}
+.logoSingle{
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}
+.logoText{
+    font-size: 20px;
+}
+.logoText::after{
+    content: " ";
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+}
+.switchText{
+    background-color: #a1191915;
+    padding: 1rem 2rem;
+    margin-inline: 1rem;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+.switchText:hover{
+    background-color: #a1191922;
+}
+.announmentText{
+    padding: 0px 10px;
+}
+.slide{
+    margin-top: 2rem;
+    margin-inline: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.slide button{
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #a1191915;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.slide button:hover{
+    transform: scale(0.98);
+    background-color: #a1191922;
+}
+
+.container-text{
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .converter {
+    padding: 20px;
+    line-height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputBinary {
+    width: 100%;
+    padding: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4cafa7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.btn:hover{
+    background-color: #1f988edd;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.checkbox{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5rem;
+    box-shadow: 0 0 15px #0000001e;
+    transition: background-color 0.2s;
+}
+.checkbox::after{
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    right: 30px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(47,47,68);
+    transition: left 0.2s;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+input[type = "checkbox"]:checked{
+    background-color: rgb(154, 189, 181);
+}
+input[type = "checkbox"]:checked:after{
+    left: 50%;
+}
+.dark-mode{
+    background-color: #000000cc;
+}
+.slide-mode{
+    background-color: #54cbd381;
+    color: #fff;
+}
